@@ -1,0 +1,36 @@
+# Banco de dados e dados locais
+dataset/
+*.fdb
+*.FDB
+*.fbk
+*.FBK
+*.fb5
+*.FB5
+*.db
+*.sqlite
+*.bak
+*.sql
+
+# Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Configuracoes locais do Airflow
+config/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Variaveis locais
+.env
+.env.*
+!.env.example
