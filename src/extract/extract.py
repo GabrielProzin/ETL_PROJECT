@@ -17,7 +17,6 @@ def extract_data():
         rows = result.fetchall()
         columns = result.keys()
     
-    
     print(columns)
     print(rows[:5])
 
@@ -31,10 +30,6 @@ def extract_data():
 
     return len(rows)
 
-
-
-
-
-
 if __name__ == "__main__":
     extract_data()
+    
