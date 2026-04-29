@@ -1,5 +1,7 @@
 # Banco de dados e dados locais
 dataset/
+data/raw/
+data/processed/
 *.fdb
 *.FDB
 *.fbk
