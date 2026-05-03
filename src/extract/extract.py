@@ -1,4 +1,3 @@
-from sqlalchemy import text
 from pathlib import Path
 from db.conexao_db import get_connection
 import csv
@@ -12,10 +11,11 @@ def extract_data():
     query = read_query()
 
     with get_connection() as conn:
-        result = conn.execute(text(query))
+        cursor = conn.cursor()
+        cursor.execute(query)
 
-        rows = result.fetchall()
-        columns = result.keys()
+        rows = cursor.fetchall()
+        columns = [field[0].lower() for field in cursor.description]
     
     print(columns)
     print(rows[:5])
